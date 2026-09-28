@@ -35,6 +35,9 @@ inicial de tres capas: presentación, lógica de negocio y datos.
 - arquitectura/: diagrama y descripción de la arquitectura inicial.
 - README.md: presentación general del proyecto.
 - .gitignore: reglas para excluir archivos del control de versiones.
+- boilerplate/: código de referencia de la docente para estudiar
+  Clean Architecture en la Guía 03. Su procedencia se documenta
+  en boilerplate/ORIGEN.md.
 
 ## Análisis del caso de negocio
 
