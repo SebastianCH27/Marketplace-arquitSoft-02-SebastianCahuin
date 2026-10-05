@@ -17,4 +17,4 @@ infraestructura y presentación.
 
 El código base corresponde al proyecto de la docente.
 El análisis y las decisiones arquitectónicas del estudiante
-se documentan en analisis-de-sistema/ y arquitectura/.
+se documentan en docs/01-analisis-de-sistema/ y docs/02-arquitectura-software/.

@@ -76,7 +76,7 @@ implementa ese contrato.
 ## Referencia observada en el boilerplate
 
 El ejemplo de la docente organiza su código dentro de
-`boilerplate/src/app/` de la siguiente manera:
+`tecnologia/boilerplate-clean-arquitecture/src/app/` de la siguiente manera:
 
 | Elemento | Evidencia en el código |
 |---|---|

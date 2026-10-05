@@ -87,13 +87,13 @@ académica propia.
 
 ## Organización del repositorio
 
-- `analisis-de-sistema/`: actores, historias de usuario, requisitos
+- `docs/01-analisis-de-sistema/`: actores, historias de usuario, requisitos
   funcionales, atributos de calidad, restricciones y drivers.
-- `arquitectura/`: arquitectura inicial y estilo arquitectónico.
-- `arquitectura/decisiones/`: registros de decisiones arquitectónicas.
-- `arquitectura/enfoque/`: responsabilidades y dependencias
+- `docs/02-arquitectura-software/`: arquitectura inicial y estilo arquitectónico.
+- `docs/02-arquitectura-software/decisiones/`: registros de decisiones arquitectónicas.
+- `docs/02-arquitectura-software/enfoque/`: responsabilidades y dependencias
   internas mediante Clean Architecture.
-- `boilerplate/`: proyecto de referencia de la docente.
+- `tecnologia/boilerplate-clean-arquitecture/`: proyecto de referencia de la docente.
 - `README.md`: presentación e índice del trabajo.
 - `.gitignore`: reglas para excluir archivos generados y temporales.
 
@@ -102,33 +102,35 @@ académica propia.
 | Entregable | Ubicación |
 |---|---|
 | 1. Necesidad del negocio | Sección “Análisis del caso de negocio” de este README. |
-| 2. Requisitos | [Actores](analisis-de-sistema/01-actores.md), [historias de usuario](analisis-de-sistema/02-historias-de-usuario.md), [requisitos funcionales](analisis-de-sistema/03-requisitos-funcionales.md) y [restricciones](analisis-de-sistema/05-restricciones.md). |
-| 3. Atributos de calidad | [Atributos y escenarios de calidad](analisis-de-sistema/04-atributos-de-calidad.md). |
-| 4. Drivers arquitectónicos | [Drivers y evolución de la propuesta](analisis-de-sistema/06-drivers-arquitectonicos.md). |
-| 5. Decisiones arquitectónicas | [Registros ADR](arquitectura/decisiones/). |
-| 6. Estilo arquitectónico | [Estilo y diagrama global](arquitectura/estilo-arquitectonico.md). |
-| Enfoque arquitectónico | [Clean Architecture y diagrama de dependencias](arquitectura/enfoque/enfoque-arquitectonico.md). |
+| 2. Requisitos | [Actores](docs/01-analisis-de-sistema/01-actores.md), [historias de usuario](docs/01-analisis-de-sistema/02-historias-de-usuario.md), [requisitos funcionales](docs/01-analisis-de-sistema/03-requisitos-funcionales.md) y [restricciones](docs/01-analisis-de-sistema/05-restricciones.md). |
+| 3. Atributos de calidad | [Atributos y escenarios de calidad](docs/01-analisis-de-sistema/04-atributos-de-calidad.md). |
+| 4. Drivers arquitectónicos | [Drivers y evolución de la propuesta](docs/01-analisis-de-sistema/06-drivers-arquitectonicos.md). |
+| 5. Decisiones arquitectónicas | [Registros ADR](docs/02-arquitectura-software/decisiones/). |
+| 6. Estilo arquitectónico | [Estilo y diagrama global](docs/02-arquitectura-software/estilo-arquitectonico.md). |
+| Enfoque arquitectónico | [Clean Architecture y diagrama de dependencias](docs/02-arquitectura-software/enfoque/enfoque-arquitectonico.md). |
 
-La [arquitectura inicial de la Guía 02](arquitectura/arquitectura-inicial.md)
+La [arquitectura inicial de la Guía 02](docs/02-arquitectura-software/arquitectura-inicial.md)
 se conserva como antecedente.
 
 ## Decisiones arquitectónicas
 
 | Registro | Decisión |
 |---|---|
-| [ADR-001](arquitectura/decisiones/ADR-001-monolito-modular.md) | Organizar el backend como un monolito modular. |
-| [ADR-002](arquitectura/decisiones/ADR-002-clean-architecture.md) | Aplicar Clean Architecture. |
-| [ADR-003](arquitectura/decisiones/ADR-003-estrategia-cache.md) | Incorporar caché para consultas públicas del catálogo. |
-| [ADR-004](arquitectura/decisiones/ADR-004-integracion-pagos.md) | Integrar pagos mediante interfaces y adaptadores. |
+| [ADR-001](docs/02-arquitectura-software/decisiones/ADR-001-monolito-modular.md) | Organizar el backend como un monolito modular. |
+| [ADR-002](docs/02-arquitectura-software/decisiones/ADR-002-clean-architecture.md) | Aplicar Clean Architecture. |
+| [ADR-003](docs/02-arquitectura-software/decisiones/ADR-003-estrategia-cache.md) | Incorporar caché para consultas públicas del catálogo. |
+| [ADR-004](docs/02-arquitectura-software/decisiones/ADR-004-integracion-pagos.md) | Integrar pagos mediante interfaces y adaptadores. |
+
 
 ## Proyecto de referencia
 
-El código de `boilerplate/` corresponde al ejemplo de la docente.
+El código de `tecnologia/boilerplate-clean-arquitecture/`
+corresponde al ejemplo de la docente.
 Se utiliza para ejecutar la aplicación, revisar las pruebas
 y estudiar la separación de responsabilidades.
 
 Su repositorio original, el fork y el commit de procedencia
-se encuentran en [ORIGEN.md](boilerplate/ORIGEN.md).
+se encuentran en [ORIGEN.md](tecnologia/boilerplate-clean-arquitecture/ORIGEN.md).
 
 La carpeta se incorporó mediante una descarga ZIP del fork.
 Sus archivos constituyen una copia dentro de este repositorio.
@@ -144,7 +146,7 @@ Entorno utilizado:
 Desde la raíz del repositorio, con Node.js 22 activo:
 
 ```sh
-cd boilerplate
+cd tecnologia/boilerplate-clean-arquitecture
 npm ci
 npm run pruebas
 npm start

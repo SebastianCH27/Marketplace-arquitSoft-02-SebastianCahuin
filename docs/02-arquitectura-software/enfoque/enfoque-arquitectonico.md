@@ -109,7 +109,7 @@ puede ser distinta de la dirección de las dependencias del código.
 ## 6. Evidencias del boilerplate
 
 El proyecto de referencia organiza el código dentro de
-`boilerplate/src/app/`.
+`tecnologia/boilerplate-clean-arquitecture/src/app/`.
 
 | Ubicación | Evidencia observada |
 |---|---|
